@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/rsz_bg-animal-avian-bird-875858.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -100,6 +100,29 @@ header .profile-image:hover {
 }
 .card:hover {
   border-color: #ff99ff;
+}
+
+.quote {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  font-size: 1.5em;
+  text-align: left;
+  background: #000;
+  color: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.quote:hover {
+  border-color: #ff99ff;
+}
+
+.person {
+  margin-top: 15px;
+  color: #7AD9FF;
+  font-size: 0.75em;
 }
 
 ul.skills {
@@ -205,3 +228,21 @@ a.social:hover {
 
 }
 
+/* Carousel by Chris Coyier https://mediatemple.net/blog/tips/carousels-dont-have-to-be-complicated/ */
+
+  .slider {
+    /* line them up horizontally */
+    display: flex;
+
+    /* allow for scrolling */
+    overflow-x: auto;
+
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+  .slider > div {
+    /* make sure the width is honored */
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+  }
